@@ -1,0 +1,14 @@
+<body>
+    <ul>
+        <% students.forEach(function(student) { %>
+            <li>
+                <%= student.name %>
+                 | 
+                <%= student.graduation ? 'ready':'not ready' %>
+                 | 
+                <%= student.commuteStatus %>
+            </li>
+            <%
+        }); %>
+    </ul>
+</body>
